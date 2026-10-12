@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Primary Meta Tags (SEO) -->
+  <title>Shyamkumar | Tech Portal, AI Lab & Arcade</title>
+  <meta name="title" content="Shyamkumar | Tech Portal, AI Lab & Arcade" />
+  <meta name="description" content="Personal portal of Shyamkumar: Aspiring developer exploring coding, artificial intelligence, game mechanics, and aesthetic design." />
+  <meta name="keywords" content="Shyamkumar, Developer, AI Lab, Retro Game, Web Development, Portfolio, JavaScript, HTML5 Canvas" />
+  <meta name="author" content="Shyamkumar" />
+  <meta name="theme-color" content="#6366f1" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://shyamkumar.dev/" />
+  <meta property="og:title" content="Shyamkumar | Tech Portal, AI Lab & Arcade" />
+  <meta property="og:description" content="Explore my coding journey, interactive AI Prompt Sandbox, and playable 8-bit retro arcade game." />
+  <meta property="og:image" content="avatar.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="Shyamkumar | Tech Portal, AI Lab & Arcade" />
+  <meta property="twitter:description" content="Explore my coding journey, interactive AI Prompt Sandbox, and playable 8-bit retro arcade game." />
+  <meta property="twitter:image" content="avatar.jpg" />
+
+  <!-- Web App Manifest (PWA) -->
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/jpeg" href="avatar.jpg" />
+
+  <!-- Google Fonts: Inter & Press Start 2P -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ==============================================
+       NAVIGATION BAR
+  ============================================== -->
+  <header class="navbar" id="top-navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-badge">SK</span>
+        <span class="logo-text">Shyamkumar</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#interests" class="nav-link">Interests</a>
+        <a href="#ai-lab" class="nav-link nav-highlight-ai">AI Lab 🧠</a>
+        <a href="#arcade" class="nav-link nav-highlight-arcade">Arcade 🕹️</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#resume" class="nav-link">Resume 📄</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- GitHub Profile Button -->
+        <a href="https://github.com/shyamluffy" target="_blank" rel="noopener noreferrer" class="btn-github" id="nav-github-link" title="Visit My GitHub">
+          <svg class="github-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          <span class="github-label">GitHub</span>
+        </a>
+
+        <!-- Dark / Light Theme Toggle -->
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
+          <span id="theme-icon">☀️</span>
+        </button>
+
+        <!-- Mobile hamburger -->
+        <button id="mobile-toggle" class="btn-icon mobile-only" aria-label="Open menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==============================================
+         HERO SECTION
+    ============================================== -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <!-- Avatar Frame with Glow -->
+        <div class="avatar-container">
+          <div class="avatar-glow"></div>
+          <img src="avatar.jpg" alt="Shyamkumar Avatar" class="avatar-img" />
+          <div class="avatar-status" title="Status: Online & Building">
+            <span class="status-indicator"></span>
+          </div>
+        </div>
+
+        <div class="hero-badge">
+          <span class="pulse-dot"></span> Tech Explorer & Developer
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Shyamkumar</span>.
+        </h1>
+
+        <p class="hero-subtitle">
+          Building the future through <strong>clean code</strong>, exploring <strong>artificial intelligence</strong>, 
+          engineering <strong>game physics</strong>, and crafting <strong>aesthetic interfaces</strong>.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#ai-lab" class="btn btn-primary">Launch AI Lab 🧠</a>
+          <a href="#arcade" class="btn btn-arcade-cta">Play Arcade 🕹️</a>
+          <a href="#resume" class="btn btn-secondary">View Resume 📄</a>
+          <a href="https://github.com/shyamluffy" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-icon-gap">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         ABOUT SECTION
+    ============================================== -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Bridging engineering principles with artistic intuition.</p>
+
+        <div class="about-grid">
+          <div class="about-card highlight-card">
+            <div class="card-icon">🚀</div>
+            <h3>My Mission</h3>
+            <p>
+              I am dedicated to understanding software engineering from first principles. By mastering both 
+              core algorithms and modern visual design, my aim is to build applications that feel as extraordinary 
+              as they are reliable.
+            </p>
+          </div>
+          <div class="about-card">
+            <div class="card-icon">🎯</div>
+            <h3>Continuous Growth</h3>
+            <p>
+              From debugging game collision physics to experimenting with generative neural models, 
+              I treat every challenge as an opportunity to master new paradigms and deepen my skills.
+            </p>
+          </div>
+          <div class="about-card">
+            <div class="card-icon">✨</div>
+            <h3>Aesthetic Standard</h3>
+            <p>
+              Software should look exceptional. I strive for micro-interactions, thoughtful typography, 
+              fluid animations, and responsive accessibility across every viewport.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         THE 4 PILLARS
+    ============================================== -->
+    <section id="interests" class="section bg-alt">
+      <div class="container">
+        <h2 class="section-title">Core Pillars</h2>
+        <p class="section-subtitle">The fields where I invest my curiosity and creative energy.</p>
+
+        <div class="interests-grid">
+          <div class="interest-card">
+            <div class="interest-header">
+              <span class="interest-icon">💻</span>
+              <h3>Coding</h3>
+            </div>
+            <p>
+              Clean code architecture, data structures, algorithms, and full-stack software development.
+            </p>
+            <div class="tag-row">
+              <span class="tag">JavaScript</span>
+              <span class="tag">HTML5/CSS3</span>
+              <span class="tag">Python</span>
+              <span class="tag">Git</span>
+            </div>
+          </div>
+
+          <div class="interest-card">
+            <div class="interest-header">
+              <span class="interest-icon">🤖</span>
+              <h3>Artificial Intelligence</h3>
+            </div>
+            <p>
+              Prompt engineering, intelligent agents, large language models, and automation pipelines.
+            </p>
+            <div class="tag-row">
+              <span class="tag">LLMs</span>
+              <span class="tag">Prompt Systems</span>
+              <span class="tag">Neural Concepts</span>
+            </div>
+          </div>
+
+          <div class="interest-card">
+            <div class="interest-header">
+              <span class="interest-icon">🎮</span>
+              <h3>Game Development</h3>
+            </div>
+            <p>
+              Game loops, 2D physics, collision mathematics, audio synthesis, and interactive world design.
+            </p>
+            <div class="tag-row">
+              <span class="tag">HTML5 Canvas</span>
+              <span class="tag">Game Loops</span>
+              <span class="tag">Web Audio API</span>
+            </div>
+          </div>
+
+          <div class="interest-card">
+            <div class="interest-header">
+              <span class="interest-icon">🎨</span>
+              <h3>UI/UX Design</h3>
+            </div>
+            <p>
+              Visual hierarchy, design tokens, color theory, glassmorphism, and responsive interactions.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Design Systems</span>
+              <span class="tag">Typography</span>
+              <span class="tag">Dark Mode</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         MODULE 1: INTERACTIVE AI CONCEPT & PROMPT LAB 🧠
+    ============================================== -->
+    <section id="ai-lab" class="section">
+      <div class="container">
+        <div class="ai-lab-header">
+          <span class="ai-pill">🧠 INTERACTIVE AI SANDBOX</span>
+          <h2 class="section-title">Neural Prompt & Concept Lab</h2>
+          <p class="section-subtitle">
+            Experiment with AI modes: select a prompt recipe or write your own to generate simulated intelligent responses in real time!
+          </p>
+        </div>
+
+        <div class="ai-lab-terminal">
+          <!-- Top Tab Bar -->
+          <div class="ai-modes-tabs" role="tablist">
+            <button class="ai-tab active" data-mode="code">💻 Code Assistant</button>
+            <button class="ai-tab" data-mode="game">🕹️ Game Mechanic Idea</button>
+            <button class="ai-tab" data-mode="design">🎨 UI/UX Color Palette</button>
+            <button class="ai-tab" data-mode="explain">🧠 Tech Explainer</button>
+          </div>
+
+          <!-- Suggested Quick Prompts -->
+          <div class="ai-suggestions" id="ai-suggestions">
+            <span class="suggestion-label">Try prompt:</span>
+            <button class="suggestion-chip">How does a game loop work?</button>
+            <button class="suggestion-chip">Write a JavaScript collision function</button>
+            <button class="suggestion-chip">Generate a cyberpunk color palette</button>
+          </div>
+
+          <!-- Input Area -->
+          <div class="ai-input-wrapper">
+            <textarea id="ai-prompt-input" rows="2" placeholder="Ask a programming question, request a game idea, or explore an AI concept..."></textarea>
+            <button id="btn-run-ai" class="btn btn-primary btn-ai-run">
+              <span class="ai-btn-text">Generate ⚡</span>
+              <span class="ai-spinner hidden"></span>
+            </button>
+          </div>
+
+          <!-- Response Window -->
+          <div class="ai-output-box">
+            <div class="output-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="output-title" id="output-model-badge">AI Response • Stream Active</span>
+              <button id="btn-copy-ai" class="btn-copy-code" title="Copy response to clipboard">📋 Copy</button>
+            </div>
+            <div class="output-body" id="ai-output-content">
+              <span class="typewriter-cursor">Ready. Select a tab above or type a prompt to begin generation.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         MODULE 2: ENHANCED RETRO ARCADE (CYBER DEFENDER) 🕹️
+    ============================================== -->
+    <section id="arcade" class="section bg-alt">
+      <div class="container">
+        <div class="arcade-header">
+          <span class="arcade-pill">🕹️ PLAYABLE 8-BIT ARCADE ENGINE</span>
+          <h2 class="section-title">CYBER DEFENDER 8-BIT</h2>
+          <p class="section-subtitle">
+            Pilot your neon starfighter, defeat incoming drones & boss ships, catch power-ups, and top the leaderboard!
+          </p>
+        </div>
+
+        <div class="arcade-cabinet" id="arcade-cabinet">
+          <!-- CRT Screen Scanline Overlay -->
+          <div class="crt-overlay" id="crt-overlay"></div>
+
+          <!-- Top Scoreboard HUD -->
+          <div class="arcade-hud">
+            <div class="hud-item">
+              <span class="hud-label">SCORE</span>
+              <span id="game-score" class="hud-value">0000</span>
+            </div>
+            <div class="hud-item">
+              <span class="hud-label">HIGH SCORE</span>
+              <span id="game-highscore" class="hud-value">0000</span>
+            </div>
+            <div class="hud-item">
+              <span class="hud-label">WEAPON</span>
+              <span id="game-weapon" class="hud-value-weapon">SINGLE LASER</span>
+            </div>
+            <div class="hud-item">
+              <span class="hud-label">SHIELDS</span>
+              <div id="game-lives" class="hud-lives">❤️❤️❤️</div>
+            </div>
+          </div>
+
+          <!-- Canvas Screen Area -->
+          <div class="canvas-wrapper">
+            <canvas id="game-canvas" width="640" height="380"></canvas>
+            
+            <!-- Start / Game Over Screen Overlay -->
+            <div id="game-overlay" class="game-overlay">
+              <div class="overlay-content">
+                <h3 id="overlay-title" class="arcade-title">CYBER DEFENDER</h3>
+                <p id="overlay-msg">Eliminate cyber-drones & asteroids. Collect ⚡ Multishot and 🛡️ Shield power-ups.</p>
+                <button id="btn-start-game" class="btn btn-arcade">INSERT COIN / START MISSION</button>
+                <div class="controls-guide">
+                  <span>🕹️ <strong>Move:</strong> Arrow Keys / [A][D]</span>
+                  <span>⚡ <strong>Fire:</strong> [Spacebar]</span>
+                  <span>🛡️ <strong>Power-ups:</strong> ⚡ Triple Laser / 🛡️ Extra Shield</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Control Bar -->
+          <div class="arcade-controls-bar">
+            <div class="arcade-buttons-group">
+              <button id="btn-mute-sound" class="btn-arcade-sm">🔊 Sound: ON</button>
+              <button id="btn-crt-toggle" class="btn-arcade-sm">📺 CRT Scanlines: ON</button>
+              <button id="btn-pause-game" class="btn-arcade-sm">⏸️ Pause</button>
+            </div>
+
+            <!-- Mobile on-screen touch buttons -->
+            <div class="touch-controls" id="touch-controls">
+              <button id="btn-touch-left" class="touch-btn">◀</button>
+              <button id="btn-touch-fire" class="touch-btn fire-btn">⚡ FIRE</button>
+              <button id="btn-touch-right" class="touch-btn">▶</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         MODULE 3: FILTERABLE PROJECTS SHOWCASE + MODALS 💼
+    ============================================== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Major Projects & Engineering</h2>
+        <p class="section-subtitle">Real-world applications, interactive systems, and technical experiments.</p>
+
+        <!-- Category Filters -->
+        <div class="project-filters" id="project-filters">
+          <button class="filter-pill active" data-filter="all">All Projects</button>
+          <button class="filter-pill" data-filter="ai">AI & Intelligence</button>
+          <button class="filter-pill" data-filter="games">Game Systems</button>
+          <button class="filter-pill" data-filter="web">Web Applications</button>
+          <button class="filter-pill" data-filter="design">UI/UX Systems</button>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="projects-grid" id="projects-grid">
+          
+          <!-- Project 1 -->
+          <article class="project-card" data-category="web design" data-id="p1">
+            <div class="project-tag">Live Production</div>
+            <h3 class="project-title">Personal Tech & Arcade Portal</h3>
+            <p class="project-desc">
+              Full-featured developer hub built with semantic HTML5, custom CSS design tokens, 
+              dark/light mode persistence, and PWA capabilities.
+            </p>
+            <div class="project-tech">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>PWA</span>
+            </div>
+            <div class="project-actions">
+              <button class="btn-link btn-open-modal" data-id="p1">View Architecture & Details →</button>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card highlight-border" data-category="games web" data-id="p2">
+            <div class="project-tag">Playable Engine</div>
+            <h3 class="project-title">Cyber Defender 8-Bit Engine</h3>
+            <p class="project-desc">
+              Custom 60 FPS 2D space shooter engine with AABB collision detection, Web Audio synthesis, 
+              particle physics, and power-up drop mechanics.
+            </p>
+            <div class="project-tech">
+              <span>HTML5 Canvas</span>
+              <span>Web Audio API</span>
+              <span>Physics Engine</span>
+            </div>
+            <div class="project-actions">
+              <button class="btn-link btn-open-modal" data-id="p2">View Architecture & Details →</button>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card" data-category="ai web" data-id="p3">
+            <div class="project-tag">Interactive Tool</div>
+            <h3 class="project-title">Neural Prompt & Concept Sandbox</h3>
+            <p class="project-desc">
+              Developer sandbox to formulate, test, and generate simulated AI responses for code optimization, 
+              game lore, and UI design generation.
+            </p>
+            <div class="project-tech">
+              <span>JavaScript</span>
+              <span>Prompt Engineering</span>
+              <span>State Machines</span>
+            </div>
+            <div class="project-actions">
+              <button class="btn-link btn-open-modal" data-id="p3">View Architecture & Details →</button>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card" data-category="games" data-id="p4">
+            <div class="project-tag">Concept Engine</div>
+            <h3 class="project-title">Procedural Roguelike Dungeon Crawler</h3>
+            <p class="project-desc">
+              A grid-based tile crawler exploring Binary Space Partitioning (BSP) procedural dungeon generation 
+              and turn-based state management.
+            </p>
+            <div class="project-tech">
+              <span>JavaScript</span>
+              <span>Procedural Math</span>
+              <span>Data Structures</span>
+            </div>
+            <div class="project-actions">
+              <button class="btn-link btn-open-modal" data-id="p4">View Architecture & Details →</button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT DETAIL MODAL DIALOG -->
+    <div id="project-modal" class="modal-backdrop" aria-hidden="true">
+      <div class="modal-dialog">
+        <button id="modal-close" class="modal-close-btn" aria-label="Close dialog">&times;</button>
+        <div id="modal-content-target">
+          <!-- Dynamically populated by JavaScript -->
+        </div>
+      </div>
+    </div>
+
+    <!-- ==============================================
+         MODULE 4: INTERACTIVE RESUME & SKILLS RADAR 📄
+    ============================================== -->
+    <section id="resume" class="section bg-alt printable-section">
+      <div class="container">
+        <div class="resume-header-row">
+          <div>
+            <h2 class="section-title text-left">Curriculum Vitae / Resume</h2>
+            <p class="section-subtitle text-left">Technical capabilities, education background, and learning roadmap.</p>
+          </div>
+          <div class="resume-cta-buttons">
+            <button id="btn-print-resume" class="btn btn-primary">🖨️ Print / Save as PDF</button>
+          </div>
+        </div>
+
+        <div class="resume-grid">
+          <!-- Left Column: Education & Experience -->
+          <div class="resume-col">
+            <div class="resume-card">
+              <h3 class="resume-heading">🎓 Education & Foundation</h3>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="timeline-year">Present</span>
+                  <h4 class="timeline-title">Software Engineering & Computer Science Foundation</h4>
+                  <p class="timeline-desc">
+                    Mastering core algorithms, data structures, web application development, and interactive software systems.
+                  </p>
+                </div>
+                <div class="timeline-item">
+                  <span class="timeline-year">Self-Directed</span>
+                  <h4 class="timeline-title">AI & Game Mechanics Specialization</h4>
+                  <p class="timeline-desc">
+                    Intensive project-based study in prompt architecture, 2D physics engines, and modern responsive frontend design.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="resume-card">
+              <h3 class="resume-heading">🏆 Milestones & Achievements</h3>
+              <ul class="achievement-list">
+                <li>✨ Built and deployed a full-featured personal web portal with PWA support.</li>
+                <li>🕹️ Engineered a custom 60 FPS Canvas game engine with real-time audio synthesis.</li>
+                <li>🧠 Architected an interactive AI prompt sandbox with simulated generative streaming.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Right Column: Skills Breakdown & Progress Bars -->
+          <div class="resume-col">
+            <div class="resume-card">
+              <h3 class="resume-heading">⚡ Technical Proficiencies</h3>
+
+              <div class="skill-meter">
+                <div class="meter-labels">
+                  <span>HTML5 & Semantic Architecture</span>
+                  <span>95%</span>
+                </div>
+                <div class="meter-bar"><div class="meter-fill" style="width: 95%;"></div></div>
+              </div>
+
+              <div class="skill-meter">
+                <div class="meter-labels">
+                  <span>CSS3 (Flexbox, Grid, Tokens, Animations)</span>
+                  <span>90%</span>
+                </div>
+                <div class="meter-bar"><div class="meter-fill" style="width: 90%;"></div></div>
+              </div>
+
+              <div class="skill-meter">
+                <div class="meter-labels">
+                  <span>JavaScript (ES6+, DOM, Asynchronous)</span>
+                  <span>85%</span>
+                </div>
+                <div class="meter-bar"><div class="meter-fill" style="width: 85%;"></div></div>
+              </div>
+
+              <div class="skill-meter">
+                <div class="meter-labels">
+                  <span>HTML5 Canvas & 2D Game Math</span>
+                  <span>80%</span>
+                </div>
+                <div class="meter-bar"><div class="meter-fill" style="width: 80%;"></div></div>
+              </div>
+
+              <div class="skill-meter">
+                <div class="meter-labels">
+                  <span>AI Prompt Engineering & Workflows</span>
+                  <span>85%</span>
+                </div>
+                <div class="meter-bar"><div class="meter-fill" style="width: 85%;"></div></div>
+              </div>
+
+              <div class="skill-meter">
+                <div class="meter-labels">
+                  <span>Git Version Control & Deployment</span>
+                  <span>80%</span>
+                </div>
+                <div class="meter-bar"><div class="meter-fill" style="width: 80%;"></div></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         MODULE 5: REAL-WORLD CONTACT SYSTEM 📬
+    ============================================== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Have a project idea, feedback, or want to collaborate? Send a message directly.</p>
+
+        <div class="contact-wrapper">
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group flex-1">
+                <label for="name">Your Name *</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required />
+              </div>
+              <div class="form-group flex-1">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <input type="text" id="subject" name="subject" placeholder="Project collaboration / Feedback" required />
+            </div>
+
+            <div class="form-group">
+              <div class="label-with-count">
+                <label for="message">Message *</label>
+                <span id="char-count" class="char-count">0 / 500</span>
+              </div>
+              <textarea id="message" name="message" rows="4" maxlength="500" placeholder="Hi Shyamkumar, I would love to connect with you regarding..." required></textarea>
+            </div>
+
+            <button type="submit" id="btn-submit-contact" class="btn btn-primary btn-block">
+              <span>Send Message 🚀</span>
+            </button>
+            <div id="form-feedback" class="form-feedback" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==============================================
+       FOOTER
+  ============================================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <span class="logo-badge">SK</span>
+          <span class="logo-text">Shyamkumar</span>
+        </div>
+        <p class="footer-tagline">Crafting modern code, AI workflows, and interactive games.</p>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://github.com/shyamluffy" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          GitHub
+        </a>
+        <a href="#hero" class="footer-top-link">Back to top ↑</a>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>© <span id="current-year"></span> Shyamkumar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

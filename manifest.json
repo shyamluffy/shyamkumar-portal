@@ -1,0 +1,16 @@
+{
+  "name": "Shyamkumar | Tech & Arcade Portal",
+  "short_name": "Shyamkumar",
+  "description": "Personal developer portfolio, AI sandbox, and retro arcade game portal.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#080c14",
+  "theme_color": "#6366f1",
+  "icons": [
+    {
+      "src": "avatar.jpg",
+      "sizes": "192x192 512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
